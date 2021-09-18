@@ -4,6 +4,8 @@ import pathlib
 import json
 import requests
 
+logging.basicConfig(level=logging.INFO)
+
 config = {}
 cwd = pathlib.Path(__file__).parent.resolve()
 path = str(cwd) + '/config.json'
